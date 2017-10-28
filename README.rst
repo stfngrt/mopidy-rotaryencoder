@@ -35,8 +35,10 @@ Before starting Mopidy, you must add configuration for
 Mopidy-RotaryEncoder to your Mopidy configuration file::
 
     [rotaryencoder]
-    # TODO: Add example of extension config
-
+    enabled = true
+    datapin = 17 #RaspberryPi GPIO BCM-Pin
+    clkpin = 18 #RaspberryPi GPIO BCM-Pin
+    swpin = 27 #RaspberryPi GPIO BCM-Pin
 
 Project resources
 =================
@@ -48,9 +50,9 @@ Project resources
 Credits
 =======
 
-- Original author: `Matthias Kreuzriegler <https://github.com/KreMat`__
-- Current maintainer: `Matthias Kreuzriegler <https://github.com/KreMat`__
-- `Contributors <https://github.com/KreMat/mopidy-rotaryencoder/graphs/contributors>`_
+- Original author: `Matthias Kreuzriegler <https://github.com/KreMat`
+- Current maintainer: `Matthias Kreuzriegler <https://github.com/KreMat`
+- `Contributors <https://github.com/KreMat/mopidy-rotaryencoder/graphs/contributors>`
 
 
 Changelog
