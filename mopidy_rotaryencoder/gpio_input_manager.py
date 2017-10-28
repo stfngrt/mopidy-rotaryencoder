@@ -75,5 +75,5 @@ class GPIOManager():
     def vol_down(self):
         self.frontend.input({'key': 'volume_down'})
 
-    def mute(self):
+    def mute(self, channel):
         self.frontend.input({'key': 'mute'})
