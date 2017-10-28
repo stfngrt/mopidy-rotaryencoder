@@ -38,7 +38,7 @@ class GPIOManager():
 
             # Mute
             GPIO.setup(sw_pin, GPIO.IN, pull_up_down=GPIO.PUD_UP)
-            GPIO.add_event_detect(sw_pin, GPIO.RISING, callback=self.mute(),
+            GPIO.add_event_detect(sw_pin, GPIO.RISING, callback=self.mute,
                                   bouncetime=30)
 
             self.correctlyLoaded = True
