@@ -21,9 +21,9 @@ class Extension(ext.Extension):
 
     def get_config_schema(self):
         schema = super(Extension, self).get_config_schema()
-        schema['dataPin'] = config.String()
-        schema['clkPin'] = config.String()
-        schema['swPin'] = config.String()
+        schema['datapin'] = config.String()
+        schema['clkpin'] = config.String()
+        schema['swpin'] = config.String()
         return schema
 
     def setup(self, registry):

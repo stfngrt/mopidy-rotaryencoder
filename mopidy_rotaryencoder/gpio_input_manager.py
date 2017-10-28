@@ -20,9 +20,9 @@ class GPIOManager():
         global data_pin
         global clk_pin
         global sw_pin
-        data_pin = pins['dataPin']
-        clk_pin = pins['clkPin']
-        sw_pin = pins['swPin']
+        data_pin = pins['datapin']
+        clk_pin = pins['clkpin']
+        sw_pin = pins['swpin']
 
         try:
             # GPIO Mode
