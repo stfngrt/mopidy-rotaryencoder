@@ -58,7 +58,8 @@ Credits
 Changelog
 =========
 
-v0.1.0 (UNRELEASED)
+v0.1.1 Update Readme
+v0.1.0 First Release
 ----------------------------------------
 
 - Initial release.
