@@ -6,14 +6,6 @@ Mopidy-RotaryEncoder
     :target: https://pypi.python.org/pypi/Mopidy-RotaryEncoder/
     :alt: Latest PyPI version
 
-.. image:: https://img.shields.io/travis/KreMat/mopidy-rotaryencoder/master.svg?style=flat
-    :target: https://travis-ci.org/KreMat/mopidy-rotaryencoder
-    :alt: Travis CI build status
-
-.. image:: https://img.shields.io/coveralls/KreMat/mopidy-rotaryencoder/master.svg?style=flat
-   :target: https://coveralls.io/r/KreMat/mopidy-rotaryencoder
-   :alt: Test coverage
-
 Mopidy frontend extension to control the volume through a rotary encoder
 
 
