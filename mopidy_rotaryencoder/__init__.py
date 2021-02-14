@@ -1,10 +1,8 @@
-from __future__ import unicode_literals
-
 import logging
 import os
 from mopidy import config, ext
 
-__version__ = '0.1.1'
+__version__ = '0.1.2'
 
 logger = logging.getLogger(__name__)
 

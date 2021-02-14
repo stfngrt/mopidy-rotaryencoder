@@ -1,6 +1,5 @@
-from __future__ import unicode_literals
-
 import pykka
+import traceback
 from mopidy import core
 
 volume_delta = 5
@@ -16,18 +15,18 @@ class RotaryEncoderFrontend(pykka.ThreadingActor, core.CoreListener):
     def input(self, input_event):
         try:
             if input_event['key'] == 'volume_up':
-                current = self.core.playback.volume.get()
+                current = self.core.mixer.get_volume().get()
                 current += volume_delta
                 if current > 100:
                     current = 100
-                self.core.playback.volume = current
+                self.core.mixer.set_volume(current)
             elif input_event['key'] == 'volume_down':
-                current = self.core.playback.volume.get()
+                current = self.core.mixer.get_volume().get()
                 current -= volume_delta
                 if current < 0:
                     current = 0
-                self.core.playback.volume = current
+                self.core.mixer.set_volume(current)
             elif input_event['key'] == 'mute':
-                self.core.playback.volume = 0
+                self.core.mixer.set_volume(0)
         except Exception:
             traceback.print_exc()
