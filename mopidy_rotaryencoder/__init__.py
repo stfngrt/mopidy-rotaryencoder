@@ -20,6 +20,7 @@ class Extension(ext.Extension):
     def get_config_schema(self):
         schema = super(Extension, self).get_config_schema()
         schema['datapin'] = config.Integer()
+        schema['volume_delta'] = config.Integer()
         schema['clkpin'] = config.Integer()
         schema['swpin'] = config.Integer()
         return schema
