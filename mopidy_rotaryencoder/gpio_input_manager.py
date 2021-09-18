@@ -4,18 +4,17 @@ import logging
 logger = logging.getLogger(__name__)
 
 class GPIOManager():
-    def __init__(self, frontend, pins):
+    def __init__(self, frontend, config):
 
         self.frontend = frontend
-
 
         self._current_data = 0
         self._current_clk = 0
 
         self.correctlyLoaded = False
-        self.data_pin = pins['datapin']
-        self.clk_pin = pins['clkpin']
-        self.sw_pin = pins['swpin']
+        self.data_pin = config['datapin']
+        self.clk_pin = config['clkpin']
+        self.sw_pin = config['swpin']
 
         try:
             # GPIO Mode
